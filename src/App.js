@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from 'react-bootstrap';
+import Header from './components/Header';
+import Section from './components/Section';
+import anibiotic from './data/antibiotics.json'
+import relaxers from './data/relaxers.json'
+import slepping from './data/slepping.json'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="py-5">
+      <Header />
+      <Section item={anibiotic}/>
+      <Section item={relaxers}/>
+      <Section item={slepping}/>
+    </Container>
   );
 }
 

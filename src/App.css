@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+.container-slider{
+  max-width: 270px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slick-prev:before, .slick-next:before{
+  color: #2d6194;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 400px)  {
+  .container-slider{
+      max-width: 200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.text-primary-dark{
+  color: #0B4495;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-danger-dark{
+  color: #E61736;
+}
+.text-paragraph{
+  color: #205072;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-500{
+  font-weight: 500;
+}
+.lh-12{
+  line-height: 1.2;
+}
+.opacity-54{
+  opacity: .54;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.fs-btn-1{
+  font-size: .8rem;
+}
+.fw-600{
+  font-weight: 600;
+}
+.lp-1{
+  letter-spacing: 1px;
+}
+.h-300{
+  height: 300px;
 }
